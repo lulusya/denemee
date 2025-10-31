@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezervasyon | Lounge Barber</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="booking.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">LB</span>
+        <span class="brand-name">Lounge Barber</span>
+      </a>
+      <nav class="site-nav">
+        <a class="nav-item" href="index.html">Ana Sayfa</a>
+        <a class="nav-item" href="about.html">Hakkımızda</a>
+        <a class="nav-item" href="index.html#experiences">Deneyimler</a>
+        <a class="nav-item" href="gallery.html">Galeri</a>
+        <a class="nav-item" href="index.html#contact">İletişim</a>
+      </nav>
+      <a href="booking.html" class="cta-btn">
+        <span>Yerini Ayırt</span>
+        <div class="cta-ripple"></div>
+      </a>
+      <button class="nav-toggle" aria-label="Menüyü Aç/Kapat"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-content">
+        <a class="drawer-link" href="index.html">Ana Sayfa</a>
+        <a class="drawer-link" href="about.html">Hakkımızda</a>
+        <a class="drawer-link" href="index.html#experiences">Deneyimler</a>
+        <a class="drawer-link" href="gallery.html">Galeri</a>
+        <a class="drawer-link" href="index.html#contact">İletişim</a>
+        <a class="drawer-cta" href="booking.html">Randevu Oluştur</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Booking Hero -->
+  <section class="booking-hero">
+    <div class="booking-hero-content">
+      <span class="section-label">Rezervasyon</span>
+      <h1>Yerini Ayırt</h1>
+      <p>Üç basit adımda randevunuzu oluşturun</p>
+    </div>
+    <div class="booking-steps-indicator">
+      <div class="step-dot active" data-step="1"><span>1</span></div>
+      <div class="step-line"></div>
+      <div class="step-dot" data-step="2"><span>2</span></div>
+      <div class="step-line"></div>
+      <div class="step-dot" data-step="3"><span>3</span></div>
+    </div>
+  </section>
+
+  <!-- Booking Form Container -->
+  <section class="booking-container">
+    <div class="booking-form-wrapper">
+      
+      <!-- Step 1: Hizmet Seçimi -->
+      <div class="booking-step active" id="step1">
+        <h2 class="step-title">Hangi deneyimi seçmek istersiniz?</h2>
+        <div class="service-selection">
+          <div class="service-option" data-service="haircut" data-duration="45" data-price="500">
+            <div class="service-icon">✂️</div>
+            <h3>Lounge Kesim & Stil</h3>
+            <p class="service-desc">Kişiye özel stil danışmanlığı</p>
+            <div class="service-meta">
+              <span class="duration">⏱️ 45 dk</span>
+              <span class="price">₺500</span>
+            </div>
+            <div class="service-check">✓</div>
+          </div>
+          <div class="service-option" data-service="shave" data-duration="60" data-price="650">
+            <div class="service-icon">🔥</div>
+            <h3>Sıcak Havlu Tıraş Ritüeli</h3>
+            <p class="service-desc">Geleneksel bakım deneyimi</p>
+            <div class="service-meta">
+              <span class="duration">⏱️ 60 dk</span>
+              <span class="price">₺650</span>
+            </div>
+            <div class="service-check">✓</div>
+          </div>
+          <div class="service-option" data-service="beard" data-duration="30" data-price="350">
+            <div class="service-icon">✨</div>
+            <h3>Premium Sakal Tasarımı</h3>
+            <p class="service-desc">Detaylı şekillendirme</p>
+            <div class="service-meta">
+              <span class="duration">⏱️ 30 dk</span>
+              <span class="price">₺350</span>
+            </div>
+            <div class="service-check">✓</div>
+          </div>
+          <div class="service-option" data-service="combo" data-duration="90" data-price="900">
+            <div class="service-icon">👑</div>
+            <h3>Komple Bakım Paketi</h3>
+            <p class="service-desc">Kesim + Tıraş + Sakal</p>
+            <div class="service-meta">
+              <span class="duration">⏱️ 90 dk</span>
+              <span class="price">₺900</span>
+            </div>
+            <div class="service-check">✓</div>
+          </div>
+        </div>
+        <button class="btn-next" disabled>Devam Et →</button>
+      </div>
+
+      <!-- Step 2: Zanaatkar & Tarih/Saat Seçimi -->
+      <div class="booking-step" id="step2">
+        <h2 class="step-title">Zanaatkar ve Tarih Seçin</h2>
+        
+        <div class="barber-selection">
+          <h3 class="subsection-title">Zanaatkar Seçimi</h3>
+          <div class="barber-options">
+            <div class="barber-option" data-barber="emre">
+              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=150&h=150&fit=crop" alt="Emre">
+              <h4>Emre</h4>
+              <span class="barber-role">Baş Berber</span>
+              <div class="barber-rating">★★★★★</div>
+              <div class="barber-check">✓</div>
+            </div>
+            <div class="barber-option" data-barber="burak">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Burak">
+              <h4>Burak</h4>
+              <span class="barber-role">Stilist</span>
+              <div class="barber-rating">★★★★★</div>
+              <div class="barber-check">✓</div>
+            </div>
+            <div class="barber-option" data-barber="can">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Can">
+              <h4>Can</h4>
+              <span class="barber-role">Bakım Uzmanı</span>
+              <div class="barber-rating">★★★★★</div>
+              <div class="barber-check">✓</div>
+            </div>
+            <div class="barber-option" data-barber="any">
+              <div class="barber-any-icon">🎲</div>
+              <h4>Fark Etmez</h4>
+              <span class="barber-role">Müsait Olan</span>
+              <div class="barber-check">✓</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="datetime-selection">
+          <div class="date-picker">
+            <h3 class="subsection-title">Tarih Seçin</h3>
+            <div class="calendar-container">
+              <div class="calendar-header">
+                <button class="calendar-nav" id="prevMonth">←</button>
+                <div class="calendar-month" id="currentMonth">Kasım 2025</div>
+                <button class="calendar-nav" id="nextMonth">→</button>
+              </div>
+              <div class="calendar-grid" id="calendarGrid">
+                <!-- Calendar günleri JS ile doldurulacak -->
+              </div>
+            </div>
+          </div>
+
+          <div class="time-picker">
+            <h3 class="subsection-title">Saat Seçin</h3>
+            <div class="time-slots" id="timeSlots">
+              <div class="time-slot" data-time="09:30">09:30</div>
+              <div class="time-slot" data-time="10:30">10:30</div>
+              <div class="time-slot" data-time="11:30">11:30</div>
+              <div class="time-slot" data-time="12:30">12:30</div>
+              <div class="time-slot" data-time="14:00">14:00</div>
+              <div class="time-slot" data-time="15:00">15:00</div>
+              <div class="time-slot" data-time="16:00">16:00</div>
+              <div class="time-slot" data-time="17:00">17:00</div>
+              <div class="time-slot" data-time="18:00">18:00</div>
+              <div class="time-slot" data-time="19:00">19:00</div>
+              <div class="time-slot" data-time="20:00">20:00</div>
+              <div class="time-slot" data-time="21:00">21:00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-navigation">
+          <button class="btn-back">← Geri</button>
+          <button class="btn-next" disabled>Devam Et →</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Kişisel Bilgiler & Onay -->
+      <div class="booking-step" id="step3">
+        <h2 class="step-title">Bilgilerinizi Girin</h2>
+        
+        <form class="booking-info-form" id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Ad Soyad</label>
+              <input type="text" name="fullname" placeholder="Ad Soyad" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Telefon</label>
+              <input type="tel" name="phone" placeholder="+90 (5__) ___ __ __" required>
+            </div>
+            <div class="form-group">
+              <label>E-posta</label>
+              <input type="email" name="email" placeholder="ornek@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Notunuz (Opsiyonel)</label>
+            <textarea name="notes" placeholder="Özel bir isteğiniz varsa belirtebilirsiniz..." rows="3"></textarea>
+          </div>
+
+          <!-- Özet Kartı -->
+          <div class="booking-summary">
+            <h3>Rezervasyon Özeti</h3>
+            <div class="summary-item">
+              <span class="summary-label">Hizmet:</span>
+              <span class="summary-value" id="summaryService">-</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Zanaatkar:</span>
+              <span class="summary-value" id="summaryBarber">-</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Tarih:</span>
+              <span class="summary-value" id="summaryDate">-</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Saat:</span>
+              <span class="summary-value" id="summaryTime">-</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Süre:</span>
+              <span class="summary-value" id="summaryDuration">-</span>
+            </div>
+            <div class="summary-total">
+              <span class="summary-label">Toplam:</span>
+              <span class="summary-value" id="summaryPrice">-</span>
+            </div>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">
+              <a href="#" target="_blank">KVKK</a> ve <a href="#" target="_blank">Gizlilik Politikası</a>'nı okudum, kabul ediyorum.
+            </label>
+          </div>
+        </form>
+
+        <div class="step-navigation">
+          <button class="btn-back">← Geri</button>
+          <button class="btn-submit" disabled>Rezervasyonu Tamamla</button>
+        </div>
+      </div>
+
+      <!-- Success Message -->
+      <div class="booking-success" id="bookingSuccess">
+        <div class="success-animation">
+          <div class="success-checkmark">✓</div>
+        </div>
+        <h2>Rezervasyonunuz Alındı!</h2>
+        <p>Randevunuz başarıyla oluşturuldu. Kısa süre içinde SMS ve e-posta ile onay mesajı alacaksınız.</p>
+        <div class="success-details">
+          <p><strong>Rezervasyon No:</strong> <span id="confirmationNumber">LB-2025-1234</span></p>
+        </div>
+        <a href="index.html" class="cta-btn">
+          <span>Ana Sayfaya Dön</span>
+          <div class="cta-ripple"></div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Sidebar Yardım -->
+    <aside class="booking-sidebar">
+      <div class="help-card">
+        <h3>Yardıma mı ihtiyacınız var?</h3>
+        <p>Rezervasyon sürecinde herhangi bir sorunuz olursa bizi arayabilirsiniz.</p>
+        <a href="tel:+902164453033" class="help-phone">
+          <span class="phone-icon">📞</span>
+          <span>+90 216 445 30 33</span>
+        </a>
+        <div class="help-hours">
+          <p><strong>Çalışma Saatleri:</strong></p>
+          <p>Her gün 09:30 - 23:00</p>
+        </div>
+      </div>
+
+      <div class="help-card benefits-card">
+        <h3>Neden Lounge Barber?</h3>
+        <ul class="benefits-list">
+          <li>✓ Profesyonel ekip</li>
+          <li>✓ Premium ürünler</li>
+          <li>✓ Rahat atmosfer</li>
+          <li>✓ Hijyen öncelikli</li>
+          <li>✓ İptal esnekliği</li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Lounge Barber | Zanaat. Tarz. Suadiye.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>

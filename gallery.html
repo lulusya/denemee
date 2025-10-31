@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Lounge Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+        <!-- Header -->
+        <header class="site-header" id="top">
+            <div class="nav-container">
+                <a href="index.html" class="brand">
+                    <span class="brand-mark">LB</span>
+                    <span class="brand-name">Lounge Barber</span>
+                </a>
+                <nav class="site-nav">
+                    <a class="nav-item" href="index.html">Ana Sayfa</a>
+                    <a class="nav-item" href="about.html">Hakkımızda</a>
+                    <a class="nav-item" href="index.html#experiences">Deneyimler</a>
+                    <a class="nav-item" href="gallery.html">Galeri</a>
+                    <a class="nav-item" href="index.html#contact">İletişim</a>
+                </nav>
+                <a href="booking.html" class="cta-btn">
+                    <span>Yerini Ayırt</span>
+                    <div class="cta-ripple"></div>
+                </a>
+                <button class="nav-toggle" aria-label="Menüyü Aç/Kapat"><span></span><span></span><span></span></button>
+            </div>
+            <div class="mobile-drawer" id="mobileDrawer">
+                <div class="drawer-content">
+                    <a class="drawer-link" href="index.html">Ana Sayfa</a>
+                    <a class="drawer-link" href="about.html">Hakkımızda</a>
+                    <a class="drawer-link" href="index.html#experiences">Deneyimler</a>
+                    <a class="drawer-link" href="gallery.html">Galeri</a>
+                    <a class="drawer-link" href="index.html#contact">İletişim</a>
+                    <a class="drawer-cta" href="booking.html">Randevu Oluştur</a>
+                </div>
+            </div>
+        </header>
+
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+        <div class="hero-content">
+            <span class="hero-label">Zanaatın Vitrini</span>
+            <h1 class="hero-title">GALERİMİZ</h1>
+            <p class="hero-subtitle">Her kesim bir sanat eseri, her tıraş bir ritüel</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="haircut">Saç Kesim</button>
+                <button class="filter-btn" data-filter="shave">Tıraş</button>
+                <button class="filter-btn" data-filter="beard">Sakal</button>
+                <button class="filter-btn" data-filter="atmosphere">Atmosfer</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Haircut Items -->
+                <div class="gallery-item" data-category="haircut">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80" alt="Klasik Kesim">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Klasik Kesim</h3>
+                            <p>Zamansız Elegans</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="haircut">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" alt="Modern Stil">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Modern Stil</h3>
+                            <p>Çağdaş Tarz</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="haircut">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80" alt="Fade Tekniği">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Fade Tekniği</h3>
+                            <p>Hassas Geçişler</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shave Items -->
+                <div class="gallery-item" data-category="shave">
+                    <img src="https://images.unsplash.com/photo-1621607512214-68297480165e?w=800&q=80" alt="Sıcak Havlu Tıraş">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Sıcak Havlu Tıraş</h3>
+                            <p>Geleneksel Ritüel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="shave">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=80" alt="Klasik Ustura">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Klasik Ustura</h3>
+                            <p>Usta İşi Titizlik</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beard Items -->
+                <div class="gallery-item" data-category="beard">
+                    <img src="https://images.unsplash.com/photo-1493106819901-66d90c699af0?w=800&q=80" alt="Sakal Tasarım">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Sakal Tasarım</h3>
+                            <p>Özel Biçimlendirme</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beard">
+                    <img src="https://images.unsplash.com/photo-1622296089863-eb7fc530daa8?w=800&q=80" alt="Sakal Bakım">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Sakal Bakım</h3>
+                            <p>Premium Ürünler</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atmosphere Items -->
+                <div class="gallery-item" data-category="atmosphere">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=80" alt="Lounge Atmosfer">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Lounge Atmosfer</h3>
+                            <p>Huzurun Adresi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="atmosphere">
+                    <img src="https://images.unsplash.com/photo-1512690216411-7b7ffef26afc?w=800&q=80" alt="Premium Mekan">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Premium Mekan</h3>
+                            <p>Lüks Detaylar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="haircut">
+                    <img src="https://images.unsplash.com/photo-1560869713-bf165a7c6466?w=800&q=80" alt="Pompadour Stil">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Pompadour Stil</h3>
+                            <p>Karizmatik Görünüm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="atmosphere">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" alt="Çalışma Anı">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Çalışma Anı</h3>
+                            <p>Zanaatın Hali</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="shave">
+                    <img src="https://images.unsplash.com/photo-1621607512214-68297480165e?w=800&q=80" alt="Yüz Masajı">
+                    <div class="item-overlay">
+                        <div class="item-info">
+                            <h3>Yüz Masajı</h3>
+                            <p>Rahatlama Ritüeli</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more-container">
+                <button class="load-more-btn">Daha Fazla Göster</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Sıradaki Eseri Siz Yaratın</h2>
+                <p>Bu sanat eserlerinin bir parçası olmak için randevunuzu oluşturun</p>
+                <a href="booking.html" class="cta-button-large">Randevu Oluştur</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev">‹</button>
+        <button class="lightbox-next">›</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>LOUNGE BARBER</h3>
+                    <p>Suadiye'nin yeni adresi. Geleneksel zanaat ile modern estetiğin buluştuğu nokta.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Erişim</h4>
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="index.html#experiences">Deneyimler</a>
+                    <a href="gallery.html">Galeri</a>
+                    <a href="booking.html">Rezervasyon</a>
+                </div>
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <p>Suadiye Mah., Çolak İsmail Sok., No:17<br>Kadıköy, İstanbul</p>
+                    <p>+90 216 445 30 33</p>
+                    <p>09:30 – 23:00 | Her Gün</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lounge Barber. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
